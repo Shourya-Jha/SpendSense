@@ -138,7 +138,7 @@ SpendSense/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/SpendSense.git
+git clone https://github.com/SRV-KILLER09/SpendSense.git
 ```
 
 ### Navigate to Project Directory
