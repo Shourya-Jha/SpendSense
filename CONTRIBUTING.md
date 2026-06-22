@@ -41,21 +41,19 @@ Enhancement suggestions are welcome! Please provide:
 
 ### Development Setup
 
-1. Clone the repository:
-   bash
-   git clone https://github.com/SRV-KILLER09/SpendSense.git
-   cd SpendSense
-   
-
-2. Compile the project:
-   bash
-   g++ -o spendsense main.cpp
-   
-
-3. Run the application:
-   bash
-   ./spendsense
-   
+### 1. Clone the repository
+```bash
+git clone https://github.com/SRV-KILLER09/SpendSense.git
+cd SpendSense
+```
+### 2. Compile the project
+```bash
+g++ -o spendsense main.cpp
+```
+### 3. Run the application
+```bash
+./spendsense
+```
 
 ## Getting Help
 
