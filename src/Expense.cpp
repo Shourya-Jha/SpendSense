@@ -61,6 +61,27 @@ void Expense::deleteExpense()
 {
     expenseID = 0;
     amount = 0;
+    date = "";
+    category = "";
+    description = "";
+    paymentMethod = "";
 
     cout << "\nExpense Deleted Successfully!\n";
+}
+
+void Expense::showStatistics()
+{
+    cout << "\nExpense Statistics\n";
+    cout << "------------------\n";
+
+    cout << "Total Expense: " << amount << endl;
+
+    if(amount > 1000)
+    {
+        cout << "High Spending Detected" << endl;
+    }
+    else
+    {
+        cout << "Spending is Under Control" << endl;
+    }
 }

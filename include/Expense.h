@@ -18,6 +18,8 @@ public:
 
     void editExpense();
     void deleteExpense();
+
+    void showStatistics();
 };
 
 #endif
