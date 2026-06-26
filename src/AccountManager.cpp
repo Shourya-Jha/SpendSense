@@ -28,12 +28,10 @@ bool AccountManager::login(User user)
 
 void AccountManager::changePassword(User &user)
 {
-    string newPassword;
+    cin.ignore();
 
     cout << "Enter New Password: ";
-    getline(cin, newPassword);
-
-    user.password = newPassword;
+    getline(cin, user.password);
 
     cout << "\nPassword Changed Successfully!\n";
 }
