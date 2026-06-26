@@ -3,6 +3,7 @@
 #include "include/AccountManager.h"
 #include "include/Expense.h"
 #include "include/Search.h"
+#include "include/Budget.h"
 
 using namespace std;
 
@@ -13,6 +14,7 @@ int main()
 
     Expense expense;
     Search search;
+    Budget budget;
 
     int choice;
 
@@ -152,8 +154,65 @@ int main()
                 break;
 
             case 4:
-                cout << "\nBudget Module Coming Soon...\n";
+            {
+                int budgetChoice;
+                double amount;
+
+                do
+                {
+                    cout << "\n====================================";
+                    cout << "\n      Budget Management";
+                    cout << "\n====================================";
+                    cout << "\n1. Set Budget";
+                    cout << "\n2. Add to Budget";
+                    cout << "\n3. Add Expense";
+                    cout << "\n4. View Budget Report";
+                    cout << "\n5. Reset Budget";
+                    cout << "\n6. Back";
+
+                    cout << "\n\nEnter Choice: ";
+                    cin >> budgetChoice;
+
+                    switch(budgetChoice)
+                    {
+                        case 1:
+                            cout << "Enter Budget Amount: ";
+                            cin >> amount;
+                            budget.setBudget(amount);
+                            break;
+
+                        case 2:
+                            cout << "Enter Amount to Add: ";
+                            cin >> amount;
+                            budget.addBudget(amount);
+                            break;
+
+                        case 3:
+                            cout << "Enter Expense Amount: ";
+                            cin >> amount;
+                            budget.addExpense(amount);
+                            break;
+
+                        case 4:
+                            budget.displayBudget();
+                            break;
+
+                        case 5:
+                            budget.resetBudget();
+                            cout << "Budget reset successfully.\n";
+                            break;
+
+                        case 6:
+                            break;
+
+                        default:
+                            cout << "\nInvalid Choice!\n";
+                    }
+
+                } while(budgetChoice != 6);
+
                 break;
+            }
 
             case 5:
                 cout << "\nReports Module Coming Soon...\n";
