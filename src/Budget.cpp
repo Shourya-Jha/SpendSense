@@ -8,6 +8,8 @@ void Budget::setBudget()
     cout << "Enter Monthly Budget: ";
     cin >> monthlyBudget;
 
+    totalSpent = 0;
+
     cout << "\nBudget Set Successfully!\n";
 }
 
