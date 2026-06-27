@@ -15,30 +15,43 @@ void Budget::setBudget()
 
 void Budget::addExpense()
 {
-    double amount;
+    double expense;
 
     cout << "Enter Expense Amount: ";
-    cin >> amount;
+    cin >> expense;
 
-    totalSpent += amount;
-
-    cout << "\nExpense Added Successfully!\n";
+    if(expense > 0)
+    {
+        totalSpent += expense;
+        cout << "\nExpense Added Successfully!\n";
+    }
+    else
+    {
+        cout << "\nInvalid Expense Amount!\n";
+    }
 }
 
 void Budget::displayBudget()
 {
-    cout << "\nMonthly Budget : " << monthlyBudget << endl;
-    cout << "Total Spent    : " << totalSpent << endl;
-    cout << "Remaining      : " << monthlyBudget - totalSpent << endl;
+    cout << "\n========== Budget Report ==========";
+    cout << "\nMonthly Budget : " << monthlyBudget;
+    cout << "\nTotal Spent    : " << totalSpent;
+    cout << "\nRemaining      : " << monthlyBudget - totalSpent;
 
     if(totalSpent > monthlyBudget)
     {
-        cout << "Status         : Budget Exceeded!" << endl;
+        cout << "\nStatus         : Budget Exceeded!";
+    }
+    else if(totalSpent >= (monthlyBudget * 0.8))
+    {
+        cout << "\nStatus         : Warning! Budget Almost Exhausted.";
     }
     else
     {
-        cout << "Status         : Budget Under Control" << endl;
+        cout << "\nStatus         : Budget Under Control.";
     }
+
+    cout << "\n===================================\n";
 }
 
 void Budget::resetBudget()
