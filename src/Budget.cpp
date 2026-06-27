@@ -1,110 +1,48 @@
-#include "budget.h"
+#include "../include/Budget.h"
 #include <iostream>
-#include <iomanip>
 
 using namespace std;
 
-// Constructor
-Budget::Budget()
+void Budget::setBudget()
 {
-    monthlyBudget = 0.0;
-    totalSpent = 0.0;
+    cout << "Enter Monthly Budget: ";
+    cin >> monthlyBudget;
+
+    cout << "\nBudget Set Successfully!\n";
 }
 
-// Set the monthly budget
-void Budget::setBudget(double amount)
+void Budget::addExpense()
 {
-    if (amount > 0)
-        monthlyBudget = amount;
-    else
-        cout << "Invalid budget amount!" << endl;
+    double amount;
+
+    cout << "Enter Expense Amount: ";
+    cin >> amount;
+
+    totalSpent += amount;
+
+    cout << "\nExpense Added Successfully!\n";
 }
 
-// Increase the budget
-void Budget::addBudget(double amount)
-{
-    if (amount > 0)
-        monthlyBudget += amount;
-    else
-        cout << "Invalid amount!" << endl;
-}
-
-// Add an expense
-void Budget::addExpense(double amount)
-{
-    if (amount > 0)
-        totalSpent += amount;
-    else
-        cout << "Invalid expense amount!" << endl;
-}
-
-// Return total budget
-double Budget::getBudget()
-{
-    return monthlyBudget;
-}
-
-// Return total expenses
-double Budget::getTotalSpent()
-{
-    return totalSpent;
-}
-
-// Return remaining budget
-double Budget::getRemainingBudget()
-{
-    return monthlyBudget - totalSpent;
-}
-
-// Calculate budget usage percentage
-double Budget::getBudgetUsage()
-{
-    if (monthlyBudget == 0)
-        return 0;
-
-    return (totalSpent / monthlyBudget) * 100;
-}
-
-// Check if budget has been exceeded
-bool Budget::isBudgetExceeded()
-{
-    return totalSpent > monthlyBudget;
-}
-
-// Display complete budget report
 void Budget::displayBudget()
 {
-    cout << "\n========== Budget Report ==========\n";
-    cout << fixed << setprecision(2);
+    cout << "\nMonthly Budget : " << monthlyBudget << endl;
+    cout << "Total Spent    : " << totalSpent << endl;
+    cout << "Remaining      : " << monthlyBudget - totalSpent << endl;
 
-    cout << "Monthly Budget   : Rs. " << monthlyBudget << endl;
-    cout << "Total Spent      : Rs. " << totalSpent << endl;
-    cout << "Remaining Budget : Rs. " << getRemainingBudget() << endl;
-    cout << "Budget Used      : " << getBudgetUsage() << "%" << endl;
-
-    if (isBudgetExceeded())
+    if(totalSpent > monthlyBudget)
     {
-        cout << "Status           : Budget Exceeded!" << endl;
-    }
-    else if (getBudgetUsage() >= 90)
-    {
-        cout << "Status           : Critical - 90% of budget used." << endl;
-    }
-    else if (getBudgetUsage() >= 80)
-    {
-        cout << "Status           : Warning - 80% of budget used." << endl;
+        cout << "Status         : Budget Exceeded!" << endl;
     }
     else
     {
-        cout << "Status           : Budget is under control." << endl;
+        cout << "Status         : Budget Under Control" << endl;
     }
-
-    cout << "===================================\n";
 }
 
-// Reset budget details
 void Budget::resetBudget()
 {
     monthlyBudget = 0;
     totalSpent = 0;
+
+    cout << "\nBudget Reset Successfully!\n";
 }
