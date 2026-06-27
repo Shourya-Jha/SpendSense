@@ -164,7 +164,7 @@ int main()
                 int budgetChoice;
 
                 cout << "\n====================================";
-                cout << "\n      Budget Management";
+                cout << "\n       Budget Management";
                 cout << "\n====================================";
                 cout << "\n1. Set Budget";
                 cout << "\n2. Add Expense";
