@@ -4,6 +4,8 @@
 #include "include/Expense.h"
 #include "include/Search.h"
 #include "include/Budget.h"
+#include "include/Report.h"
+#include "include/ExportManager.h"
 
 using namespace std;
 
@@ -14,7 +16,11 @@ int main()
 
     Expense expense;
     Search search;
+
     Budget budget;
+
+    Report report;
+    ExportManager exportManager;
 
     int choice;
 
@@ -156,67 +162,110 @@ int main()
             case 4:
             {
                 int budgetChoice;
-                double amount;
 
-                do
+                cout << "\n====================================";
+                cout << "\n       Budget Management";
+                cout << "\n====================================";
+                cout << "\n1. Set Budget";
+                cout << "\n2. Add Expense";
+                cout << "\n3. View Budget";
+                cout << "\n4. Reset Budget";
+                cout << "\n5. Back";
+
+                cout << "\n\nEnter Choice: ";
+                cin >> budgetChoice;
+
+                switch(budgetChoice)
                 {
-                    cout << "\n====================================";
-                    cout << "\n      Budget Management";
-                    cout << "\n====================================";
-                    cout << "\n1. Set Budget";
-                    cout << "\n2. Add to Budget";
-                    cout << "\n3. Add Expense";
-                    cout << "\n4. View Budget Report";
-                    cout << "\n5. Reset Budget";
-                    cout << "\n6. Back";
+                    case 1:
+                        budget.setBudget();
+                        break;
 
-                    cout << "\n\nEnter Choice: ";
-                    cin >> budgetChoice;
+                    case 2:
+                        budget.addExpense();
+                        break;
 
-                    switch(budgetChoice)
-                    {
-                        case 1:
-                            cout << "Enter Budget Amount: ";
-                            cin >> amount;
-                            budget.setBudget(amount);
-                            break;
+                    case 3:
+                        budget.displayBudget();
+                        break;
 
-                        case 2:
-                            cout << "Enter Amount to Add: ";
-                            cin >> amount;
-                            budget.addBudget(amount);
-                            break;
+                    case 4:
+                        budget.resetBudget();
+                        break;
 
-                        case 3:
-                            cout << "Enter Expense Amount: ";
-                            cin >> amount;
-                            budget.addExpense(amount);
-                            break;
+                    case 5:
+                        break;
 
-                        case 4:
-                            budget.displayBudget();
-                            break;
-
-                        case 5:
-                            budget.resetBudget();
-                            cout << "Budget reset successfully.\n";
-                            break;
-
-                        case 6:
-                            break;
-
-                        default:
-                            cout << "\nInvalid Choice!\n";
-                    }
-
-                } while(budgetChoice != 6);
+                    default:
+                        cout << "\nInvalid Choice!\n";
+                }
 
                 break;
             }
 
             case 5:
-                cout << "\nReports Module Coming Soon...\n";
+            {
+                int reportChoice;
+
+                cout << "\n====================================";
+                cout << "\n         Reports Module";
+                cout << "\n====================================";
+                cout << "\n1. Daily Report";
+                cout << "\n2. Weekly Report";
+                cout << "\n3. Monthly Report";
+                cout << "\n4. Expense Summary";
+                cout << "\n5. Highest Expense";
+                cout << "\n6. Lowest Expense";
+                cout << "\n7. Export Report";
+                cout << "\n8. Save Report";
+                cout << "\n9. Back";
+
+                cout << "\n\nEnter Choice: ";
+                cin >> reportChoice;
+
+                switch(reportChoice)
+                {
+                    case 1:
+                        report.dailyReport();
+                        break;
+
+                    case 2:
+                        report.weeklyReport();
+                        break;
+
+                    case 3:
+                        report.monthlyReport();
+                        break;
+
+                    case 4:
+                        report.expenseSummary();
+                        break;
+
+                    case 5:
+                        report.highestExpense();
+                        break;
+
+                    case 6:
+                        report.lowestExpense();
+                        break;
+
+                    case 7:
+                        exportManager.exportReport();
+                        break;
+
+                    case 8:
+                        exportManager.saveReport();
+                        break;
+
+                    case 9:
+                        break;
+
+                    default:
+                        cout << "\nInvalid Choice!\n";
+                }
+
                 break;
+            }
 
             case 6:
                 cout << "\nAnalytics Module Coming Soon...\n";
