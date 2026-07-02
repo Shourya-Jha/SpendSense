@@ -1,39 +1,63 @@
-# SpendSense
+<div align="center">
 
-> A collaborative open-source Expense Tracker developed in C++ to help users manage expenses, track budgets, and analyze spending habits efficiently.
+#  SpendSense
 
-![C++](https://img.shields.io/badge/C%2B%2B-17-blue)
-![Open Source](https://img.shields.io/badge/Open%20Source-Yes-green)
-![Version](https://img.shields.io/badge/Version-v0.1-orange)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+### Track it. Understand it. Own it.
 
----
+*A collaborative open-source Expense Tracker built in C++ to manage your daily expenses, track budgets, and analyze spending habits with ease.*
 
-## About the Project
+<br/>
 
-SpendSense is a console-based Expense Tracker System built using C++. It enables users to manage personal finances by recording expenses, tracking budgets, organizing spending into categories, and generating financial reports.
+![C++](https://img.shields.io/badge/C%2B%2B-17-00599C?style=for-the-badge&logo=cplusplus&logoColor=white) ![Open Source](https://img.shields.io/badge/Open%20Source-Yes-2ea44f?style=for-the-badge&logo=github&logoColor=white) ![Version](https://img.shields.io/badge/Version-v0.1-orange?style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+
+</div>
+
+<br/>
+
+## 📖 Table of Contents
+
+- [About the Project](#-about-the-project)
+- [Features](#-features)
+- [Technology Stack](#-technology-stack)
+- [Project Structure](#-project-structure)
+- [Installation](#-installation)
+- [Git Workflow](#-git-workflow)
+- [Contributors](#-contributors)
+- [Project Objectives](#-project-objectives)
+- [License](#-license)
+- [Acknowledgement](#-acknowledgement)
+
+<br/>
+
+## 🧭 About the Project
+
+**SpendSense** is a console-based Expense Tracker System built using C++. It enables users to manage personal finances by recording expenses, tracking budgets, organizing spending into categories, and generating financial reports.
 
 The project is being developed as part of the **Open Source Development Internship 2026** and follows collaborative software development practices using Git and GitHub.
 
----
+<br/>
 
-## Features
+## ✨ Features
 
-### User Management
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 👤 User Management
 - User Registration
 - User Login and Logout
 - Profile Management
 - Change Password
 - Forgot Password
 
-### Expense Management
+### 💸 Expense Management
 - Add Expense
 - Edit Expense
 - Delete Expense
 - View Expenses
 - Transaction History
 
-### Search and Sorting
+### 🔍 Search and Sorting
 - Search by ID
 - Search by Date
 - Search by Category
@@ -42,49 +66,52 @@ The project is being developed as part of the **Open Source Development Internsh
 - Sort by Amount
 - Sort by Category
 
-### Category Management
+</td>
+<td width="50%" valign="top">
+
+### 🏷️ Category Management
 - Default Categories
 - Custom Categories
 - Category Statistics
 - Tag Management
 
-### Budget Management
+### 🎯 Budget Management
 - Monthly Budget
 - Weekly Budget
 - Category Budget
 - Budget Alerts
 - Savings Goals
 
-### Reports and Analytics
-- Daily Reports
-- Weekly Reports
-- Monthly Reports
-- Yearly Reports
-- Highest Expense
-- Lowest Expense
+### 📊 Reports and Analytics
+- Daily / Weekly / Monthly / Yearly Reports
+- Highest & Lowest Expense
 - Average Expense
 - Spending Trends
 
-### File Management
+### 💾 File Management
 - Save Data
 - Load Data
 - Backup Data
 
----
+</td>
+</tr>
+</table>
 
-## Technology Stack
+<br/>
+
+## 🔧 Technology Stack
 
 | Component | Technology |
-|------------|------------|
-| Language | C++ |
-| Concepts | OOP, STL, File Handling |
-| Version Control | Git |
-| Repository Hosting | GitHub |
-| Development Environment | Visual Studio Code |
+|:---|:---|
+|  Language | C++ |
+|  Concepts | OOP, STL, File Handling |
+|  Version Control | Git |
+|  Repository Hosting | GitHub |
+|  Development Environment | Visual Studio Code |
 
----
+<br/>
 
-## Project Structure
+## 📂 Project Structure
 
 ```text
 SpendSense/
@@ -103,7 +130,8 @@ SpendSense/
 │   ├── Report.h
 │   ├── ExportManager.h
 │   ├── Analytics.h
-│   └── FileManager.h
+│   ├── FileManager.h
+│   └── UI.h
 │
 ├── src/
 │   ├── User.cpp
@@ -139,45 +167,44 @@ SpendSense/
 └── CHANGELOG.md
 ```
 
----
+<br/>
 
-## Installation
+## 🚀 Installation
 
-### Clone Repository
+**1. Clone the repository**
 
 ```bash
 git clone https://github.com/SRV-KILLER09/SpendSense.git
 ```
 
-### Navigate to Project Directory
+**2. Navigate to the project directory**
 
 ```bash
 cd SpendSense
 ```
 
-### Compile
+**3. Compile**
 
 ```bash
 g++ main.cpp src/*.cpp -o SpendSense
 ```
 
-### Run
+**4. Run**
 
-#### Linux / macOS
+<table>
+<tr>
+<td><b> Linux / macOS</b></td>
+<td><code>./SpendSense</code></td>
+</tr>
+<tr>
+<td><b> Windows</b></td>
+<td><code>SpendSense.exe</code></td>
+</tr>
+</table>
 
-```bash
-./SpendSense
-```
+<br/>
 
-#### Windows
-
-```bash
-SpendSense.exe
-```
-
----
-
-## Git Workflow
+## 🌿 Git Workflow
 
 ```text
 main
@@ -192,14 +219,16 @@ main
 └── feature/analytics
 ```
 
-All features are developed independently and merged through Pull Requests.
+> All features are developed independently and merged through Pull Requests.
 
----
+<br/>
 
-## Contributors
+## 👥 Contributors
+
+<div align="center">
 
 | Name | Enrollment Number |
-|--------|------------------|
+|:---|:---:|
 | Aayush Kharbanda | 992501030159 |
 | Nishita Rastogi | 992501040013 |
 | Vardaan Saxena | 992501030399 |
@@ -207,9 +236,11 @@ All features are developed independently and merged through Pull Requests.
 | Shourya Jha | 992501030416 |
 | Kartik Goel | 992501040019 |
 
----
+</div>
 
-## Project Objectives
+<br/>
+
+## 🎯 Project Objectives
 
 - Develop a complete Expense Tracker using C++
 - Apply Object-Oriented Programming concepts
@@ -218,18 +249,25 @@ All features are developed independently and merged through Pull Requests.
 - Follow open-source development practices
 - Enhance collaborative software development skills
 
----
+<br/>
 
-## License
+## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
+See the [`LICENSE`](LICENSE) file for more details.
 
-See the `LICENSE` file for more details.
+<br/>
 
----
-
-## Acknowledgement
+## 🙏 Acknowledgement
 
 Developed as part of the **Open Source Development Internship 2026**.
 
 This project aims to provide hands-on experience in software development, teamwork, version control, and open-source collaboration.
+
+<br/>
+
+<div align="center">
+
+**⭐ If you find this project useful, consider giving it a star! ⭐**
+
+</div>
