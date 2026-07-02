@@ -158,7 +158,7 @@ cd SpendSense
 ### Compile
 
 ```bash
-g++ src/*.cpp -o SpendSense
+g++ main.cpp src/*.cpp -o SpendSense
 ```
 
 ### Run
