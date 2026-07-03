@@ -266,6 +266,42 @@ This project aims to provide hands-on experience in software development, teamwo
 
 <br/>
 
+
+## ⭐ Snippets
+
+<img width="457" height="295" alt="image" src="https://github.com/user-attachments/assets/1633de66-0984-4b92-bfbc-29eb161a364a" />
+
+---
+
+<img width="1600" height="845" alt="image" src="https://github.com/user-attachments/assets/8b5dd093-559f-4d3c-bc46-26c087808407" />
+
+---
+
+
+<img width="1600" height="843" alt="image" src="https://github.com/user-attachments/assets/8b3164db-a40b-4122-b0e3-22a38e15166b" />
+
+---
+
+
+<img width="1600" height="844" alt="image" src="https://github.com/user-attachments/assets/12469f04-2002-4435-bdbc-379f6331c80e" />
+
+---
+
+
+<img width="1600" height="846" alt="image" src="https://github.com/user-attachments/assets/f8b84d5a-de6d-4e6d-8286-1df120d341a6" />
+
+---
+
+
+<img width="1600" height="843" alt="image" src="https://github.com/user-attachments/assets/6ae6c4e2-3237-4051-97e1-a1daf065fd0e" />
+
+---
+
+
+<img width="1600" height="843" alt="image" src="https://github.com/user-attachments/assets/9f3388f8-e7c0-4a23-b733-c44e94c80c14" />
+
+---
+
 <div align="center">
 
 **⭐ If you find this project useful, consider giving it a star! ⭐**
