@@ -5,6 +5,8 @@
 #include "include/Search.h"
 #include "include/Report.h"
 #include "include/ExportManager.h"
+#include "include/Category.h"
+#include "include/TagManager.h"
 
 using namespace std;
 
@@ -15,6 +17,9 @@ int main()
 
     Expense expense;
     Search search;
+   
+    Category category;
+    TagManager tagManager;
 
     Report report;
     ExportManager exportManager;
@@ -24,7 +29,7 @@ int main()
     do
     {
         cout << "\n====================================";
-        cout << "\n         SpendSense v0.1";
+        cout << "\n        SpendSense v0.1";
         cout << "\n====================================";
         cout << "\n1. User Management";
         cout << "\n2. Expense Management";
@@ -153,8 +158,63 @@ int main()
             }
 
             case 3:
-                cout << "\nCategory Management Module Coming Soon...\n";
+            {
+                int categoryChoice;
+
+                cout << "\n====================================";
+                cout << "\n     Category Management";
+                cout << "\n====================================";
+                cout << "\n1. Add Category";
+                cout << "\n2. View Category";
+                cout << "\n3. Edit Category";
+                cout << "\n4. Delete Category";
+                cout << "\n5. Add Tag";
+                cout << "\n6. View Tag";
+                cout << "\n7. Assign Tag"; 
+                cout << "\n8. Back";
+
+                cout << "\n\nEnter Choice: ";
+                cin >> categoryChoice;
+
+                switch(categoryChoice)
+                {
+                    case 1:
+                        category.addCategory();
+                        break;
+
+                    case 2:
+                        category.displayCategory(); // Fixed: mapped to displayCategory()
+                        break;
+
+                    case 3:
+                        category.editCategory();
+                        break;
+
+                    case 4:
+                        category.deleteCategory();
+                        break;
+
+                    case 5:
+                        tagManager.addTag();
+                        break;
+
+                    case 6:
+                        tagManager.displayTag(); // Fixed: mapped to displayTag()
+                        break;
+
+                    case 7:
+                        tagManager.assignTag(); // Fixed: mapped to assignTag()
+                        break;
+
+                    case 8:
+                        break;
+
+                    default:
+                        cout << "\nInvalid Choice!\n";
+                }
+
                 break;
+            }
 
             case 4:
                 cout << "\nBudget Management Module Coming Soon...\n";
