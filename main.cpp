@@ -183,7 +183,7 @@ int main()
                         break;
 
                     case 2:
-                        category.displayCategory(); // Fixed: mapped to displayCategory()
+                        category.viewCategory(); // Fixed: mapped to displayCategory()
                         break;
 
                     case 3:
