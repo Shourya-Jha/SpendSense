@@ -1,6 +1,17 @@
 <div align="center">
 
-#  SpendSense
+```
+      ____                     |   ____                           
+  / ___| _ __   ___ _ __   __| / ___|  ___ _ __  ___  ___    
+  \___ \| '_ \ / _ \ '_ \ / _` \___ \ / _ \ '_ \/ __|/ _ \   
+   ___) | |_) |  __/ | | | (_| |___) |  __/ | | \__ \  __/   
+  |____/| .__/ \___|_| |_|\__,_|____/ \___|_| |_|___/\___|   
+         |_|                                                  
+                      
+```
+</div>
+
+---
 
 ### Track it. Understand it. Own it.
 
@@ -229,12 +240,12 @@ main
 
 | Name | Enrollment Number |
 |:---|:---:|
-| Aayush Kharbanda | 992501030159 |
-| Nishita Rastogi | 992501040013 |
 | Vardaan Saxena | 992501030399 |
+| Nishita Rastogi | 992501040013 |
+| Kartik Goel | 992501040019 |
 | Dev Puri | 992501030424 |
 | Shourya Jha | 992501030416 |
-| Kartik Goel | 992501040019 |
+| Aayush Kharbanda | 992501030159 |
 
 </div>
 
