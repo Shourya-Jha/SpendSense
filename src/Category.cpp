@@ -13,7 +13,7 @@ void Category::addCategory()
     cout << "\nCategory Added Successfully!\n";
 }
 
-void Category::displayCategory()
+void Category::viewCategory()
 {
     cout << "\nCategory Name: " << categoryName << endl;
 }
