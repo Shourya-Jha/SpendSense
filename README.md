@@ -7,22 +7,24 @@
    ___) | |_) |  __/ | | | (_| |___) |  __/ | | \__ \  __/   
   |____/| .__/ \___|_| |_|\__,_|____/ \___|_| |_|___/\___|   
          |_|                                                  
-                      
+                    
 ```
 </div>
 
 ---
 
+<div align = "center">
+
 ### Track it. Understand it. Own it.
 
-*A collaborative open-source Expense Tracker built in C++ to manage your daily expenses, track budgets, and analyze spending habits with ease.*
+*A collaborative open-source expense tracking system built in C++ that helps users manage expenses, organize budgets, generate reports, and gain meaningful insights into their spending habits.*
 
 <br/>
 
 ![C++](https://img.shields.io/badge/C%2B%2B-17-00599C?style=for-the-badge&logo=cplusplus&logoColor=white) ![Open Source](https://img.shields.io/badge/Open%20Source-Yes-2ea44f?style=for-the-badge&logo=github&logoColor=white) ![Version](https://img.shields.io/badge/Version-v0.1-orange?style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 </div>
-
+</div>
 <br/>
 
 ## 📖 Table of Contents
@@ -277,8 +279,11 @@ This project aims to provide hands-on experience in software development, teamwo
 
 <br/>
 
-
 ## ⭐ Snippets
+
+<div align = "center"> <b>Below are some snapshots showcasing different modules of SpendSense.</b> </div>
+
+---
 
 <img width="457" height="295" alt="image" src="https://github.com/user-attachments/assets/1633de66-0984-4b92-bfbc-29eb161a364a" />
 
@@ -288,26 +293,21 @@ This project aims to provide hands-on experience in software development, teamwo
 
 ---
 
-
 <img width="1600" height="843" alt="image" src="https://github.com/user-attachments/assets/8b3164db-a40b-4122-b0e3-22a38e15166b" />
 
 ---
-
 
 <img width="1600" height="844" alt="image" src="https://github.com/user-attachments/assets/12469f04-2002-4435-bdbc-379f6331c80e" />
 
 ---
 
-
 <img width="1600" height="846" alt="image" src="https://github.com/user-attachments/assets/f8b84d5a-de6d-4e6d-8286-1df120d341a6" />
 
 ---
 
-
 <img width="1600" height="843" alt="image" src="https://github.com/user-attachments/assets/6ae6c4e2-3237-4051-97e1-a1daf065fd0e" />
 
 ---
-
 
 <img width="1600" height="843" alt="image" src="https://github.com/user-attachments/assets/9f3388f8-e7c0-4a23-b733-c44e94c80c14" />
 
