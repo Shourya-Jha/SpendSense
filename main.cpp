@@ -8,6 +8,7 @@
 #include "include/Category.h"
 #include "include/TagManager.h"
 #include "include/Budget.h"
+#include "include/Savings.h"
 #include "include/Analytics.h"
 #include "include/FileManager.h"
 
@@ -25,6 +26,7 @@ int main()
     TagManager tagManager;
 
     Budget budget;
+    Savings savings;
 
     Report report;
     ExportManager exportManager;
@@ -46,7 +48,8 @@ int main()
         cout << "\n5. Reports";
         cout << "\n6. Analytics";
         cout << "\n7. File Management";
-        cout << "\n8. Exit";
+        cout << "\n8. Savings Management";
+        cout << "\n9. Exit";
 
         cout << "\n\nEnter your choice: ";
         cin >> choice;
@@ -418,6 +421,55 @@ int main()
             }
 
             case 8:
+            {
+                int savingsChoice;
+
+                cout << "\n====================================";
+                cout << "\n       Savings Management";
+                cout << "\n====================================";
+                cout << "\n1. Set Savings Goal";
+                cout << "\n2. Add Savings";
+                cout << "\n3. Withdraw Savings";
+                cout << "\n4. View Savings";
+                cout << "\n5. Reset Savings";
+                cout << "\n6. Back";
+
+                cout << "\n\nEnter Choice: ";
+                cin >> savingsChoice;
+
+                switch(savingsChoice)
+                {
+                    case 1:
+                        savings.setGoal();
+                        break;
+
+                    case 2:
+                        savings.addSavings();
+                        break;
+
+                    case 3:
+                        savings.withdrawSavings();
+                        break;
+
+                    case 4:
+                        savings.displaySavings();
+                        break;
+
+                    case 5:
+                        savings.resetSavings();
+                        break;
+
+                    case 6:
+                        break;
+
+                    default:
+                        cout << "\nInvalid Choice!\n";
+                }
+
+                break;
+            }
+
+            case 9:
                 cout << "\nThank you for using SpendSense!\n";
                 break;
 
@@ -425,7 +477,7 @@ int main()
                 cout << "\nInvalid Choice! Please try again.\n";
         }
 
-    } while(choice != 8);
+    } while(choice != 9);
 
     return 0;
 }
