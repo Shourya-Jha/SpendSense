@@ -8,6 +8,8 @@
 #include "include/Category.h"
 #include "include/TagManager.h"
 #include "include/Budget.h"
+#include "include/Analytics.h"
+#include "include/FileManager.h"
 
 using namespace std;
 
@@ -27,6 +29,9 @@ int main()
     Report report;
     ExportManager exportManager;
 
+    Analytics analytics;
+    FileManager fileManager;
+
     int choice;
 
     do
@@ -40,7 +45,8 @@ int main()
         cout << "\n4. Budget Management";
         cout << "\n5. Reports";
         cout << "\n6. Analytics";
-        cout << "\n7. Exit";
+        cout << "\n7. File Management";
+        cout << "\n8. Exit";
 
         cout << "\n\nEnter your choice: ";
         cin >> choice;
@@ -329,10 +335,89 @@ int main()
             }
 
             case 6:
-                cout << "\nAnalytics Module Coming Soon...\n";
+            {
+                int analyticsChoice;
+
+                cout << "\n====================================";
+                cout << "\n         Analytics Module";
+                cout << "\n====================================";
+                cout << "\n1. Spending Trends";
+                cout << "\n2. Average Expense";
+                cout << "\n3. Category-wise Analysis";
+                cout << "\n4. Monthly Comparison";
+                cout << "\n5. Back";
+
+                cout << "\n\nEnter Choice: ";
+                cin >> analyticsChoice;
+
+                switch(analyticsChoice)
+                {
+                    case 1:
+                        analytics.spendingTrends();
+                        break;
+
+                    case 2:
+                        analytics.averageExpense();
+                        break;
+
+                    case 3:
+                        analytics.categoryWiseAnalysis();
+                        break;
+
+                    case 4:
+                        analytics.monthlyComparison();
+                        break;
+
+                    case 5:
+                        break;
+
+                    default:
+                        cout << "\nInvalid Choice!\n";
+                }
+
                 break;
+            }
 
             case 7:
+            {
+                int fileChoice;
+
+                cout << "\n====================================";
+                cout << "\n        File Management";
+                cout << "\n====================================";
+                cout << "\n1. Save Data";
+                cout << "\n2. Load Data";
+                cout << "\n3. Backup Data";
+                cout << "\n4. Back";
+
+                cout << "\n\nEnter Choice: ";
+                cin >> fileChoice;
+
+                switch(fileChoice)
+                {
+                    case 1:
+                        fileManager.saveData();
+                        break;
+
+                    case 2:
+                        fileManager.loadData();
+                        break;
+
+                    case 3:
+                        fileManager.backupData();
+                        break;
+
+                    case 4:
+                        break;
+
+                    default:
+                        cout << "\nInvalid Choice!\n";
+                }
+
+                break;
+            }
+
+            case 8:
                 cout << "\nThank you for using SpendSense!\n";
                 break;
 
@@ -340,7 +425,7 @@ int main()
                 cout << "\nInvalid Choice! Please try again.\n";
         }
 
-    } while(choice != 7);
+    } while(choice != 8);
 
     return 0;
 }
