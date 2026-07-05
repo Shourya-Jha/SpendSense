@@ -139,12 +139,10 @@ SpendSense/
 │   ├── Category.h
 │   ├── TagManager.h
 │   ├── Budget.h
-│   ├── Savings.h
 │   ├── Report.h
 │   ├── ExportManager.h
 │   ├── Analytics.h
-│   ├── FileManager.h
-│   └── UI.h
+│   └── FileManager.h
 │
 ├── src/
 │   ├── User.cpp
@@ -156,23 +154,14 @@ SpendSense/
 │   ├── Category.cpp
 │   ├── TagManager.cpp
 │   ├── Budget.cpp
-│   ├── Savings.cpp
 │   ├── Report.cpp
 │   ├── ExportManager.cpp
 │   ├── Analytics.cpp
 │   └── FileManager.cpp
 │
-├── data/
-│   ├── users.txt
-│   ├── expenses.txt
-│   ├── categories.txt
-│   └── budgets.txt
-│
-├── docs/
-│   └── architecture.png
-│
 ├── main.cpp
 │
+├── Expense Tracker Synopsis.pdf
 ├── README.md
 ├── LICENSE
 ├── CONTRIBUTING.md
